@@ -26,12 +26,3 @@ class EmployeeSalary:
     def salary(self):
         if self.hours != None: 
             return self.hours * self.hourly_payment
-        
-get_hours = EmployeeSalary.get_hours("test", 31, 5, "test")
-print(get_hours.name, get_hours.hours, get_hours.rest_days, get_hours.email, get_hours.hourly_payment, get_hours.salary())
-
-EmployeeSalary.set_hourly_payment(300)
-print(EmployeeSalary.hourly_payment)
-
-get_email = EmployeeSalary.get_email("test", 31, 5, None)
-print(get_email.name, get_email.hours, get_email.rest_days, get_email.email, get_email.hourly_payment, get_email.salary())
